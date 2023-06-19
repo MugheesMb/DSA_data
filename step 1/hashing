@@ -1,5 +1,28 @@
-int hash[13] = {0};
-    for(int i =0;i<n;i++){
-        hash[arr[i]] += 1;
-        cout<<hash[arr[i]]<<" ";
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    int arr[n];
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+        cout<<" question"<<endl;
     }
+    
+  int hash[n+1] = {0};
+    for(int i=0;i<n;i++){
+        hash[arr[i]] += 1;   
+    }
+    
+    int f;
+    cin>>f;
+    
+    while(f--){
+        int k;
+        cin>>k;
+        cout<<hash[k]<<" "<<endl; 
+    }
+    return 0;
+}
